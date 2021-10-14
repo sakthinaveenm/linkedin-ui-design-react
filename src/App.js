@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navbar from "./components/Navbar";
+import LeftBar from "./components/LeftBar";
+import RightBar from "./components/RightBar";
+import CenterBar from "./components/CenterBar";
+import { CCol, CRow } from "@coreui/react";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div
+        className="container-fluid"
+        style={{
+          backgroundColor: "#f3f2ee",
+        }}
+      >
+        <div className="container" style={{ paddingTop: "120px" }}>
+          <CRow>
+            <CCol style={{ position: "static" }}>
+              <LeftBar />
+            </CCol>
+            <CCol style={{ marginLeft: "-120px", marginTop: "-10px" }}>
+              <CenterBar />
+            </CCol>
+            <CCol>
+              <RightBar />
+            </CCol>
+          </CRow>
+        </div>
+      </div>
+    </>
   );
 }
 

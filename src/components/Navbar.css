@@ -1,0 +1,26 @@
+.menufont {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.5;
+  font-weight: 400;
+  align-items: left;
+}
+.menufont:hover {
+  opacity: 1;
+}
+.menuFull:hover {
+  border-bottom: 2px solid #000000;
+  cursor: pointer;
+}
+
+.vl {
+  margin-left: 18px;
+  margin-top: -10px;
+  border-left: 1px solid #ebebeb;
+  height: 63px;
+}
